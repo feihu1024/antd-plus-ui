@@ -1,0 +1,86 @@
+{
+  "name": "antd-plus-ui",
+  "version": "0.0.1",
+  "description": "一个基于 antd4.24.10 的二次封装组件库",
+  "keywords": [
+    "antd",
+    "react",
+    "components",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "feihu1024(1690806685@qq.com)",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "dev": "dumi dev",
+    "docs:build": "dumi build",
+    "doctor": "father doctor",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint \"{src,test,docs,scripts,.dumi/theme}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{src,test,docs,scripts,.dumi/theme}/**/*.{js,jsx,ts,tsx}\"",
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "prettier": "prettier -c --write \"{src,test,docs,scripts,.dumi/theme}/**\"",
+    "start": "npm run dev"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.21.0",
+    "antd": "4.24.10",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "@umijs/lint": "^4.0.0",
+    "dumi": "2.2.0",
+    "dumi-theme-antd-style": "0.29.0",
+    "eslint": "^8.23.0",
+    "father": "4.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "stylelint": "^14.9.1",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

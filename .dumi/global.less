@@ -1,0 +1,30 @@
+/*
+ * @Author       : wangfeihu
+ * @Date         : 2023-07-12 13:32:51
+ * @LastEditors  : wangfeihu
+ * @LastEditTime : 2023-07-19 14:59:14
+ * @Description  : 全局样式配置，主要引入antd默认样式
+ */
+
+// antd默认样式
+@import 'antd/dist/antd.less';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+// 调整markdown表格样式
+.markdown .dumi-default-table .dumi-default-table-content table {
+  code {
+    background-color: initial;
+  }
+
+  td:nth-child(3) code {
+    color: #c41d7f;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": false,
+    "declaration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": { "@@/*": [".dumi/tmp/*"], "antd-plus-ui": ["src"], "antd-plus-ui/*": ["src/*", "*"] }
+  },
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+}
