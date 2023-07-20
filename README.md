@@ -35,15 +35,15 @@ npm start
 │ 	└─ 📄index.zh-CN.md	    # 首页页面的文档
 ├─ 📁public						# 站点的静态资源目录
 ├─ 📁src						  # 组件目录
-│ 	├─ 📁foo		          # 组件1
-│ 	├─ 📁bar				      # 组件2
-│		......                # 组件n
+│ 	├─ 📁foo		          # foo组件
+│		......                # 其他更多组件
 │ 	└─ 📄index.ts         # 组件导出配置
 ├─ 📄.dumirc.ts				# dumi 的配置文件
 ├─ 📄.fatherrc.ts			# father 的配置文件，用于组件库打包
 ├─ 📄.eslintrc.js			# eslint插件配置
 ├─ 📄.prettierrc.js		# prettier插件配置
-├─ 📄.stylelintrc			# stylelint插件配置
+├─ 📄.release-it.js		# release-it配置，用于管理自动发布流程
+├─ 📄.stylelintrc		# stylelint插件配置
 └─ 📄tsconfig.json		# ts相关配置
 ```
 
@@ -303,23 +303,10 @@ git commit -m "fix: 修复bug"	// type后的冒号和空格不可省略，descri
 
    - 检查 `package.json` 中的 NPM 包名及 `publishConfig` 是否符合预期
 
-2. 更新版本号
+2. release 发布
 
-   使用 `npm version` 命令更新版本号，该命令将会自动生成 git tag 及 git commit，并将版本号更新到 package.json 中，例如：
-
-   ```
-   // 升级修订号
-   npm version patch -m "build: 发布%s版本"	// 0.0.1->0.0.2
-
-   // 升级次版本号
-   npm version minor -m "build: 发布%s版本"	// 0.0.1->0.1.0
-
-   // 升级主版本号
-   npm version minor -m "build: 发布%s版本"	// 0.0.1->1.0.0
-   ```
-
-3. 发布
+   使用 release-it 可以根据 [release-it 配置](https://github.com/release-it/release-it/blob/main/config/release-it.json) 自动完成发布前的准备工作，包括：更新版本号、生成 tag 、更新 changelog、git 提交及推送远程仓库、npm 发布等
 
    ```
-   npm publish
+   npm run release
    ```
