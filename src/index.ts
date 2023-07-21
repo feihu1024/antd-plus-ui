@@ -8,3 +8,5 @@ export { default as DTable } from './d-table';
 export type { DTableProps, DTableSourceProps, TableParamsProps } from './d-table';
 export { default as DTreeSelect } from './d-tree-select';
 export type { DTreeSelectProps } from './d-tree-select';
+export { default as DUpload } from './d-upload';
+export type { DUploadFile, DUploadProps } from './d-upload';
