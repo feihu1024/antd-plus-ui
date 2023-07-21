@@ -8,30 +8,17 @@ nav:
 
 # 组件概览
 
-从灵活开发角度考虑，本主题包同样提供了几个重点组件，供主题开发者快速复用。
+Antd Plus UI 中提供了许多基于 antd 的二次封装组件，这些组件旨在简化特定业务场景下组件使用的繁琐流程，使得开发者可以用更少的代码完成复杂的页面搭建。
+使用这些组件可以让开发者更加专注于业务本身的逻辑实现,而不用过多关心组件状态如何更新，使得页面实现变得更为简洁、高效。
 
 目前提供的组件如下 ：
 
-| 组件             | 描述         | 链接                         |
-| ---------------- | ------------ | ---------------------------- |
-| Hero             | 头图         | [查看](/components/hero)     |
-| Features         | 特性         | [查看](/components/features) |
-| Footer           | 页脚         | [查看](/components/Footer)   |
-| Toc              | 目录         | [查看](/components/Toc)      |
-| DumiSiteProvider | 主题容器组件 | [查看](/components/Toc)      |
-
-## 使用
-
-如果你希望独立使用 `dumi-theme-antd-style` 所提供的组件，你需要手动在外层包裹一次 `DumiSiteProvider`，例如：
-
-```tsx | pure
-import { DumiSiteProvider, Hero } from 'dumi-theme-antd-style';
-
-export default () => (
-  <DumiSiteProvider>
-    <Hero />
-  </DumiSiteProvider>
-);
-```
-
-但如果你是在 `dumi-theme-antd-style` 下复用组件，则不需要包裹 `DumiSiteProvider`， 主题包中会自动为文档包裹一层 `DumiSiteProvider`，详见[源码](https://github.com/arvinxx/dumi-theme-antd-style/blob/master/src/layouts/DocLayout/index.tsx#L58)。
+| 组件        | 描述         | 链接                              |
+| ----------- | ------------ | --------------------------------- |
+| DCascader   | 级联选择组件 | [查看](/components/d-cascader)    |
+| DForm       | 表单组件     | [查看](/components/d-form)        |
+| DInput      | 输入组件     | [查看](/components/d-input)       |
+| DSelect     | 下拉选择组件 | [查看](/components/d-select)      |
+| DTable      | 表格组件     | [查看](/components/d-table)       |
+| DTreeSelect | 树型选择组件 | [查看](/components/d-tree-select) |
+| DUpload     | 上传组件     | [查看](/components/d-upload)      |
