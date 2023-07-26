@@ -18,4 +18,4 @@ group:
 
 ## 问题反馈
 
-如果在使用过程中发现任何问题、或者有改善建议，欢迎在 [**GitHub Issues**](https://github.com/feihu1024/gms/issues) 进行反馈
+如果在使用过程中发现任何问题、或者有改善建议，欢迎在 [**GitHub Issues**](https://github.com/feihu1024/antd-plus-ui/issues) 进行反馈
