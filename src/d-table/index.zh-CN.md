@@ -31,35 +31,49 @@ group:
 
 <code src="./demos/extraParamsDemo.tsx" title="指定额外的请求参数" description="extraParams可以指定current和size以外的其他参数,当extraParams发生变化时，自动使用默认分页参数调用loadMore方法" ></code>
 
+## ellipsis 内容超出自动折行
+
+<code src="./demos/cellEllipsis.tsx" title="ellipsis内容超出自动折行" description="列属性中新增cellEllipsis属性,开启后单元格内容在ellipsis为true时任然可以折行显示"></code>
+
 ## 显示错误信息
 
 <code src="./demos/errorMsgDemo.tsx" title="显示错误信息" description="showErrorMsg可以在loadMore发生错误显示相应的提示信息,可以是布尔值（true按默认规则显示错误信息，false不显示），也可以是一个返回字符串的函数" ></code>
 
 ## API
 
-DTableProps
+### DTableProps
 
-| 参数               | 说明                                                                                                | 类型                                                        | 默认值                            | 版本 |
-| :----------------- | :-------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- | :-------------------------------- | :--- |
-| loadMore           | 表格数据的加载函数,在表格创建、分页变化、额外参数变化时自动运行，如果设置该属性，则 dataSource 失效 | `(params?: TableParamsProps) => Promise<DTableSourceProps>` | -                                 |      |
-| defaultColumnProps | 表格列的基础默认配置,默认所有列居中，表头文字超出显示省略号，详见 antd Column                       | `Column`                                                    | { align:'center',ellipsis: true } |      |
-| actionColumn       | 操作列配置,可以是一个普通列配置对象，也可以是一个 columns 的 render 函数                            | `ColumnType<any> \| ColumnType<any>['render']`              | -                                 |      |
-| showErrorMsg       | 加载数据失败时是否显示错误信息（仅 loadMore 可用时生效）                                            | `boolean \| (err:any) => string`                            | true                              |      |
-| extraParams        | 额外的请求参数,（仅 loadMore 可用时生效）                                                           | `TableParamsProps`                                          | -                                 |      |
+| 参数               | 说明                                                                                                | 类型                                                                                               | 默认值                                                 | 版本 |
+| :----------------- | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------- | :--- |
+| loadMore           | 表格数据的加载函数,在表格创建、分页变化、额外参数变化时自动运行，如果设置该属性，则 dataSource 失效 | `(params?: TableParamsProps,records?: DTableSourceProps['records']) => Promise<DTableSourceProps>` | -                                                      |      |
+| defaultColumnProps | 表格列的基础默认配置,默认所有列居中，表头文字超出显示省略号，详见 [DColumnType](#d-column-type)     | `DColumnType`                                                                                      | { ellipsis: { showTitle: false }, cellEllipsis: true } |      |
+| actionColumn       | 操作列配置,可以是一个普通列配置对象，也可以是一个 columns 的 render 函数                            | `DColumnType \| DColumnType['render']`                                                             | -                                                      |      |
+| showErrorMsg       | 加载数据失败时是否显示错误信息（仅 loadMore 可用时生效）                                            | `boolean \| (err:any) => string`                                                                   | true                                                   |      |
+| extraParams        | 额外的请求参数,（仅 loadMore 可用时生效）                                                           | `TableParamsProps`                                                                                 | -                                                      |      |
 
-DTableSourceProps
+其他属性同 antd Table 组件，详见：https://4x-ant-design.antgroup.com/components/table-cn/#API
+
+<div id="d-column-type"></div>
+
+### DColumnType
+
+| 参数         | 说明               | 类型      | 默认值 | 版本 |
+| :----------- | :----------------- | :-------- | :----- | :--- |
+| cellEllipsis | 单元格内容是否省略 | `boolean` | false  |      |
+
+其他属性同 antd Table 组件 Column，详见：https://4x-ant-design.antgroup.com/components/table-cn/#Column
+
+### DTableSourceProps
 
 | 参数    | 说明                                               | 类型       | 默认值 | 版本 |
 | :------ | :------------------------------------------------- | :--------- | :----- | :--- |
 | records | 表格数据列表，等同于 antd table 的 datasource 属性 | `object[]` | -      |      |
 | total   | 当前请求参数下的列表总数（用于分页）               | `number`   | -      |      |
 
-TableParamsProps
+### TableParamsProps
 
 | 参数    | 说明                         | 类型     | 默认值 | 版本 |
 | :------ | :--------------------------- | :------- | :----- | :--- |
 | current | 当前页码                     | `number` | 1      |      |
 | size    | 分页大小                     | `number` | 10     |      |
 | -       | 后台接口所支持的其他任意参数 | `any`    | -      |      |
-
-其他属性同 antd Table 组件，详见：https://4x-ant-design.antgroup.com/components/table-cn/#API
