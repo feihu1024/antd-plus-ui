@@ -2,7 +2,7 @@
  * @Author       : wangfeihu
  * @Date         : 2023-06-02 09:29:11
  * @LastEditors  : wangfeihu
- * @LastEditTime : 2023-07-28 11:08:25
+ * @LastEditTime : 2023-08-03 19:52:58
  * @Description  : 基于antd的Form组件
  */
 
@@ -39,13 +39,14 @@ function getChildren(items, children: DFormProps['children'], _defaultItemProps:
   }
   if (children) {
     const childrenList = children instanceof Array ? children : [children];
-    list = list.concat(childrenList);
+    const _childrenList = childrenList.map((item) => ({ ...item, props: helper.merge(_defaultItemProps, item.props) }));
+    list = list.concat(_childrenList);
   }
   return list;
 }
 
 function InternalForm(props: DFormProps, ref: React.Ref<DFormRefProps>) {
-  const { className = '', defaultItemProps, items, children, layout, ...otherProps } = props;
+  const { className = '', defaultItemProps, items, children, layout, autoComplete = 'off', ...otherProps } = props;
 
   const _className = `d-form ${className} ${layout === 'inlineVertical' ? 'inlineVertical' : ''}`;
 
@@ -79,7 +80,7 @@ function InternalForm(props: DFormProps, ref: React.Ref<DFormRefProps>) {
   );
 
   return (
-    <Form {...otherProps} className={_className} layout={_layout}>
+    <Form {...otherProps} className={_className} layout={_layout} autoComplete={autoComplete}>
       <div className="form-wrapper">{itemChildren}</div>
     </Form>
   );
