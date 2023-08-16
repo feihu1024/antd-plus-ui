@@ -2,7 +2,7 @@
  * @Author       : wangfeihu
  * @Date         : 2023-05-09 15:04:48
  * @LastEditors  : wangfeihu
- * @LastEditTime : 2023-08-03 18:54:10
+ * @LastEditTime : 2023-08-16 16:39:30
  * @Description  : 基于antd的Table组件
  */
 import React, { forwardRef, useEffect, useRef, useState } from 'react';
@@ -30,6 +30,7 @@ export type DTableProps = Omit<TableProps<any>, 'columns'> & {
   showErrorMsg?: boolean | ((err: any) => string);
   /** 额外的请求参数,（仅loadMore可用时生效） */
   extraParams?: TableParamsProps;
+  /** 表格列配置 */
   columns?: DColumnType[];
 };
 

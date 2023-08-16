@@ -2,7 +2,7 @@
  * @Author       : wangfeihu
  * @Date         : 2023-06-16 09:37:07
  * @LastEditors  : wangfeihu
- * @LastEditTime : 2023-08-11 11:31:04
+ * @LastEditTime : 2023-08-14 08:29:50
  * @Description  : 基于antd的Upload组件
  */
 
@@ -39,7 +39,7 @@ type DUploadProps = Omit<UploadProps, 'fileList' | 'onChange' | 'customRequest' 
   thumbOption?: ThumbOptionProps | null;
   /** 列表项样式类名 */
   itemClassName?: string;
-  // 是否强制允许文件预览
+  /** 是否强制允许文件预览 */
   // eslint-disable-next-line no-unused-vars
   enablePreview?: boolean | ((file: DUploadFile) => boolean);
 };
