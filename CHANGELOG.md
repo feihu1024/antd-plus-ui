@@ -1,3 +1,13 @@
+## [0.0.2](https://github.com/feihu1024/antd-plus-ui/compare/0.0.1...0.0.2) (2023-08-29)
+
+### 🐛 修复 bug
+
+- 修复 DForm 组件 bug ([412a922](https://github.com/feihu1024/antd-plus-ui/commit/412a922ed4922b6b44931fff7d2fa8e6105fe2aa))
+- 修复 DForm 组件 bug ([0998b1e](https://github.com/feihu1024/antd-plus-ui/commit/0998b1ed6528357edda532abd000489908d5d30b))
+- 修复 DInput 组件 bug ([40f64fa](https://github.com/feihu1024/antd-plus-ui/commit/40f64fa112f05379aed631c1e07f73f047746f46))
+- 修复 DTable 组件 bug ([3b2a9df](https://github.com/feihu1024/antd-plus-ui/commit/3b2a9df0b3ac5c848c3aeda2fd4705463a3af10c))
+- 修复 DUpload 组件在 DFrom 组件中的 bug ([9aa428c](https://github.com/feihu1024/antd-plus-ui/commit/9aa428cf8d0210fb334c13209b6bc1128d7eb459))
+
 ## 0.0.1 (2023-07-21)
 
 ### ✨ 新功能
