@@ -11,7 +11,7 @@ export default function CellEllipsis() {
   const loadMore = (params) => {
     const { current = 1, size = 10, type = 1 } = params;
     const defaultText =
-      '默认情况下，当column设置ellipsis=true或ellipsis = { showTitle:true }时，超出单元格的内容会自动跟表头一样显示省略号，但现在可以通过设置cellEllipsis=false使得表头超出省略但单元格任何折行的效果';
+      '默认情况下，当column设置ellipsis=true或ellipsis = { showTitle:true }时，超出单元格的内容会自动跟表头一样显示省略号，但现在可以通过设置cellEllipsis=false使得表头超出省略但单元格任可折行的效果';
     let total = 75;
     const records: any[] = [];
     for (let i = (current - 1) * size; i < current * size; i++) {
