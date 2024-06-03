@@ -1,6 +1,6 @@
 ---
 title: DCascader
-description: 基于 antd 4.24.10 Cascader 的二次封装组件
+description: 基于 antd 4.24.16 Cascader 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件
@@ -37,4 +37,4 @@ group:
 | onLoadData | 等同 antd 的 loadData 属性,用于监听 antd loadData 事件                                                                                     | `(value?,option?,options) => void`                            | -      |      |
 | loading    | 是否显示加载中（传入数字表示延迟加载,单位毫秒，0 等同于 false）                                                                            | `boolean \| number`                                           | 600    |      |
 
-其他属性同 antd Cascader 组件，详见：https://4x-ant-design.antgroup.com/components/cascader-cn/#API
+其他属性同 antd Cascader 组件，详见：https://4x.ant.design/components/cascader-cn/#API

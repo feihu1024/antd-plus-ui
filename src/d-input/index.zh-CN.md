@@ -1,6 +1,6 @@
 ---
 title: DInput
-description: 基于 antd 4.24.10 Input 的二次封装组件
+description: 基于 antd 4.24.16 Input 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件
@@ -35,4 +35,4 @@ group:
 | enableCompose | 是否启用合成输入                                          | `boolean`            | true   |      |
 | debounce      | 是否开启防抖（true 表示 800 毫秒，false 或 0 表示不开启） | `boolean \| number`  | false  |      |
 
-其他属性同 antd Input 组件，详见：https://4x-ant-design.antgroup.com/components/input-cn/#API
+其他属性同 antd Input 组件，详见：https://4x.ant.design/components/input-cn/#API

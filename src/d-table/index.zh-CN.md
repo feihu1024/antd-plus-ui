@@ -1,6 +1,6 @@
 ---
 title: DTable
-description: 基于 antd 4.24.10 Table 的二次封装组件
+description: 基于 antd 4.24.16 Table 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件
@@ -51,7 +51,7 @@ group:
 | showErrorMsg       | 加载数据失败时是否显示错误信息（仅 loadMore 可用时生效）                                            | `boolean \| (err:any) => string`                                                                   | true                                                   |      |
 | extraParams        | 额外的请求参数,（仅 loadMore 可用时生效）                                                           | `TableParamsProps`                                                                                 | -                                                      |      |
 
-其他属性同 antd Table 组件，详见：https://4x-ant-design.antgroup.com/components/table-cn/#API
+其他属性同 antd Table 组件，详见：https://4x.ant.design/components/table-cn/#API
 
 <div id="d-column-type"></div>
 
@@ -61,7 +61,7 @@ group:
 | :----------- | :----------------- | :-------- | :----- | :--- |
 | cellEllipsis | 单元格内容是否省略 | `boolean` | false  |      |
 
-其他属性同 antd Table 组件 Column，详见：https://4x-ant-design.antgroup.com/components/table-cn/#Column
+其他属性同 antd Table 组件 Column，详见：https://4x.ant.design/components/table-cn/#Column
 
 ### DTableSourceProps
 

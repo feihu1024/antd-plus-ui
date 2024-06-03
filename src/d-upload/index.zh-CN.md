@@ -1,6 +1,6 @@
 ---
 title: DUpload
-description: 基于 antd 4.24.10 Upload 的二次封装组件
+description: 基于 antd 4.24.16 Upload 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件
@@ -51,7 +51,7 @@ group:
 | itemClassName | 列表项样式类名                                                                                      | `string`                                                                                                                                  |        |      |
 | enablePreview | 是否强制允许文件预览                                                                                | `boolean`                                                                                                                                 | false  |      |
 
-其他属性同 antd Upload 组件，详见：https://4x-ant-design.antgroup.com/components/upload-cn/#API
+其他属性同 antd Upload 组件，详见：https://4x.ant.design/components/upload-cn/#API
 
 ### DUploadFile
 
@@ -61,7 +61,7 @@ group:
 | uid    | 文件 uid,系统自动生成                              | `string \| number`     |        |      |
 | source | 文件来源 upload:文件对话框,remote:已上传的文件对象 | `'upload' \| 'remote'` |        |      |
 
-继承自 UploadFile，附带额外属性用于渲染，详见：https://4x-ant-design.antgroup.com/components/upload-cn/#UploadFile
+继承自 UploadFile，附带额外属性用于渲染，详见：https://4x.ant.design/components/upload-cn/#UploadFile
 
 ### ThumbOptionProps
 

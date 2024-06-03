@@ -1,6 +1,6 @@
 # antd-plus-ui
 
-一个基于 antd4.24.10 的二次封装组件库
+一个基于 antd4.24.16 的二次封装组件库
 
 ## 项目初始化
 
@@ -183,7 +183,7 @@ export default function BasicDemo() {
 ```
 ---
 title: DCascader
-description: 基于 antd 4.24.10 Cascader 的二次封装组件
+description: 基于 antd 4.24.16 Cascader 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件

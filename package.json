@@ -1,7 +1,7 @@
 {
   "name": "antd-plus-ui",
   "version": "0.0.2",
-  "description": "一个基于 antd4.24.10 的二次封装组件库",
+  "description": "一个基于 antd4.24.16 的二次封装组件库",
   "keywords": [
     "antd",
     "react",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.21.0",
-    "antd": "4.24.10",
+    "antd": "4.24.16",
     "lodash": "4.17.21"
   },
   "devDependencies": {

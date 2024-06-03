@@ -1,6 +1,6 @@
 ---
 title: DForm
-description: 基于 antd 4.24.10 Form 的二次封装组件
+description: 基于 antd 4.24.16 Form 的二次封装组件
 tocDepth: 2
 nav:
   title: 组件
@@ -56,7 +56,7 @@ group:
 | layout           | 布局方式 新增了行内垂直布局方式 inlineVertical                            | `'inline' \| 'horizontal' \| 'vertical' \| 'inlineVertical'` | horizontal |      |
 | children         | children 方式添加表单项,如果同时设置了 items，则 children 在 items 下面） | `ReactNode \| ReactNode[]`                                   | -          |      |
 
-其他属性同 antd Form 组件，详见：https://4x-ant-design.antgroup.com/components/form-cn/#API
+其他属性同 antd Form 组件，详见：https://4x.ant.design/components/form-cn/#API
 
 ### DItemProps
 
@@ -65,7 +65,7 @@ group:
 | renderType    | [渲染类型](#render-type)                                | `string \| undefined`                                                                         | -      |      |
 | render        | 自定义渲染函数, 仅 renderType 等于 custom、other 时生效 | `(props: ItemProps, formItemProps: FormItemProps, allProps?: InternalItemProps) => ReactNode` | -      |      |
 | label         | label 标签文本,同 antd Form.Item 的 label,只能是 string | `string`                                                                                      | -      |      |
-| name          | name 标签文本,同 antd Form.Item 的 name                 | [NamePath](https://4x-ant-design.antgroup.com/components/form-cn/#NamePath)                   | -      |      |
+| name          | name 标签文本,同 antd Form.Item 的 name                 | [NamePath](https://4x.ant.design/components/form-cn/#NamePath)                                | -      |      |
 | formItemProps | Form.Item 的属性                                        | `object`                                                                                      | -      |      |
 | -             | renderType 字段所指定的组件支持的其他属性               | `any`                                                                                         | -      |      |
 
