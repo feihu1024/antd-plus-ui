@@ -1,3 +1,11 @@
+## [0.1.0](https://github.com/feihu1024/antd-plus-ui/compare/0.0.2...0.1.0) (2024-07-24)
+
+### 🐛 修复 bug
+
+- 提升了 antd 版本并修复了部分已知 bug ([751d3bf](https://github.com/feihu1024/antd-plus-ui/commit/751d3bf67aa81b2317ba7117d5bd91faffb0014d))
+- 修复 DUpload 组件显示错误的 bug ([be3dd73](https://github.com/feihu1024/antd-plus-ui/commit/be3dd733b208c8d443d9b7e29a9c7a08079c0c80))
+- 修复 Dupload 组件 showUploadList 属性无法覆盖的问题 ([bab3e87](https://github.com/feihu1024/antd-plus-ui/commit/bab3e8710a262b13004731d31b7df670cf2d662f))
+
 ## [0.0.2](https://github.com/feihu1024/antd-plus-ui/compare/0.0.1...0.0.2) (2023-08-29)
 
 ### 🐛 修复 bug
