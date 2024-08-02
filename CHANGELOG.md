@@ -1,3 +1,9 @@
+## [0.1.1](https://github.com/feihu1024/antd-plus-ui/compare/0.1.0...0.1.1) (2024-08-02)
+
+### 🐛 修复 bug
+
+- 修复了 DForm 组件的已知 bug ([fa2cf38](https://github.com/feihu1024/antd-plus-ui/commit/fa2cf38b27697dc88e27c7153d473e3a6dc8f211))
+
 ## [0.1.0](https://github.com/feihu1024/antd-plus-ui/compare/0.0.2...0.1.0) (2024-07-24)
 
 ### 🐛 修复 bug
