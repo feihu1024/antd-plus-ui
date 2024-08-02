@@ -33,7 +33,7 @@ export default function LayoutDemo() {
         </Radio.Group>
       </div>
       <DForm style={{ minHeight: 200 }} items={items} layout={layout}>
-        <DForm.Item>
+        <DForm.Item renderType="other">
           <div>
             <Button htmlType="submit" type="primary">
               提交

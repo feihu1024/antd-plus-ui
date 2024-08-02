@@ -1,8 +1,8 @@
 /*
  * @Author       : wangfeihu
  * @Date         : 2023-06-12 17:35:10
- * @LastEditors  : wangfeihu
- * @LastEditTime : 2023-07-28 10:02:45
+ * @LastEditors  : feihu1024
+ * @LastEditTime : 2024-08-02 13:43:38
  * @Description  : 根据renderType渲染对应的表单项组件
  */
 
@@ -222,22 +222,15 @@ const renderMap = {
       </Form.Item>
     );
   },
-  dUpload: (
-    props: DUploadProps,
-    formItemProps: FormItemProps,
-    label: DItemProps['label'],
-    // eslint-disable-next-line no-unused-vars
-    render: (props: any) => ReactNode,
-    children: DUploadProps['children'],
-  ) => {
+  dUpload: (props: DUploadProps, formItemProps: FormItemProps, label: DItemProps['label'], render: () => ReactNode, children: DUploadProps['children']) => {
     return (
       <Form.Item {...formItemProps}>
         <DUpload {...props}>{children}</DUpload>
       </Form.Item>
     );
   },
-  button: (props: ButtonProps, formItemProps: FormItemProps, label: DItemProps['label']) => {
-    return <Button {...props}>{label || ''}</Button>;
+  button: (props: ButtonProps, formItemProps: FormItemProps, label: DItemProps['label'], render: () => ReactNode, children: DUploadProps['children']) => {
+    return <Button {...props}>{label || children || ''}</Button>;
   },
   divider: (props: DividerProps, formItemProps: FormItemProps, label: DItemProps['label']) => {
     return (

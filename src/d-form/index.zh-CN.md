@@ -73,36 +73,36 @@ group:
 
 ### renderType
 
-| 类型名称     | 类型名称           | 类型说明                                                  |
-| :----------- | :----------------- | :-------------------------------------------------------- |
-| dInputs      | `<DInputs />`      | 内置组件                                                  |
-| input        | `<Input />`        | 内置组件                                                  |
-| textArea     | `<TextArea />`     | 内置组件                                                  |
-| password     | `<Password />`     | 内置组件                                                  |
-| inputNumber  | `<InputNumber />`  | 内置组件                                                  |
-| autoComplete | `<AutoComplete />` | 内置组件                                                  |
-| dSelect      | `<DSelect />`      | 内置组件                                                  |
-| select       | `<Select />`       | 内置组件                                                  |
-| dCascader    | `<DCascader />`    | 内置组件                                                  |
-| cascader     | `<Cascader />`     | 内置组件                                                  |
-| dTreeSelect  | `<DTreeSelect />`  | 内置组件                                                  |
-| treeSelect   | `<TreeSelect />`   | 内置组件                                                  |
-| datePicker   | `<DatePicker />`   | 内置组件                                                  |
-| timePicker   | `<TimePicker />`   | 内置组件                                                  |
-| rangePicker  | `<RangePicker />`  | 内置组件                                                  |
-| mentions     | `<Mentions />`     | 内置组件                                                  |
-| checkbox     | `<Checkbox />`     | 内置组件                                                  |
-| radio        | `<Radio />`        | 内置组件                                                  |
-| rate         | `<Rate />`         | 内置组件                                                  |
-| slider       | `<Slider />`       | 内置组件                                                  |
-| switch       | `<Switch />`       | 内置组件                                                  |
-| transfer     | `<Transfer />`     | 内置组件                                                  |
-| upload       | `<Upload />`       | 内置组件                                                  |
-| dUpload      | `<DUpload />`      | 内置组件                                                  |
-| button       | `<Button />`       | 内置组件                                                  |
-| divider      | `<Divider />`      | 内置组件                                                  |
-| custom       | `<Custom />`       | 自定义组件渲染组件                                        |
-| other        | `<Other />`        | 自定义组件渲染组件(包裹在`<Form.Item></Form.Item>`组件中) |
+| 类型名称     | 类型名称           | 类型说明                                |
+| :----------- | :----------------- | :-------------------------------------- |
+| dInputs      | `<DInputs />`      | 内置组件                                |
+| input        | `<Input />`        | 内置组件                                |
+| textArea     | `<TextArea />`     | 内置组件                                |
+| password     | `<Password />`     | 内置组件                                |
+| inputNumber  | `<InputNumber />`  | 内置组件                                |
+| autoComplete | `<AutoComplete />` | 内置组件                                |
+| dSelect      | `<DSelect />`      | 内置组件                                |
+| select       | `<Select />`       | 内置组件                                |
+| dCascader    | `<DCascader />`    | 内置组件                                |
+| cascader     | `<Cascader />`     | 内置组件                                |
+| dTreeSelect  | `<DTreeSelect />`  | 内置组件                                |
+| treeSelect   | `<TreeSelect />`   | 内置组件                                |
+| datePicker   | `<DatePicker />`   | 内置组件                                |
+| timePicker   | `<TimePicker />`   | 内置组件                                |
+| rangePicker  | `<RangePicker />`  | 内置组件                                |
+| mentions     | `<Mentions />`     | 内置组件                                |
+| checkbox     | `<Checkbox />`     | 内置组件                                |
+| radio        | `<Radio />`        | 内置组件                                |
+| rate         | `<Rate />`         | 内置组件                                |
+| slider       | `<Slider />`       | 内置组件                                |
+| switch       | `<Switch />`       | 内置组件                                |
+| transfer     | `<Transfer />`     | 内置组件                                |
+| upload       | `<Upload />`       | 内置组件                                |
+| dUpload      | `<DUpload />`      | 内置组件                                |
+| button       | `<Button />`       | 内置组件                                |
+| divider      | `<Divider />`      | 内置组件                                |
+| custom       | `<Custom />`       | 自定义渲染组件                          |
+| other        | `<Other />`        | 自定义渲染组件(包裹在`Form.Item`组件中) |
 
 ### ref(组件引用)
 

@@ -13,8 +13,8 @@ const items: DFormProps['items'] = [
     ],
   },
   { name: 'age', label: '年龄', renderType: 'inputNumber', style: { width: '100%' } },
-  { name: 'submit', label: '提交', renderType: 'button', htmlType: 'submit', type: 'primary' },
-  { name: 'reset', label: '重置', renderType: 'button', htmlType: 'reset', style: { marginLeft: 16 } },
+  { name: 'submit', label: '提交', renderType: 'button', formItemProps: { label: undefined }, htmlType: 'submit', type: 'primary' },
+  { name: 'reset', label: '重置', renderType: 'button', formItemProps: { label: undefined }, htmlType: 'reset', style: { marginLeft: 16 } },
 ];
 
 export default function BasicDemo() {
