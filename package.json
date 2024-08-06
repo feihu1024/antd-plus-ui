@@ -1,6 +1,6 @@
 {
   "name": "antd-plus-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "一个基于 antd4.24.16 的二次封装组件库",
   "keywords": [
     "antd",
